@@ -11,7 +11,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <p className="text-[#c8a24d] uppercase tracking-widest text-sm mb-4">
-            Premium Barbershop · Lebanon
+            Beirut Barber Studio
           </p>
 
           <h1 className="text-white text-4xl md:text-6xl font-bold leading-tight mb-6">
