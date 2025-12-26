@@ -53,7 +53,7 @@ const Hero = () => {
           <img
             src={heroImg}
             alt="Barber shop"
-            className="w-full h-[520px] object-cover rounded-3xl shadow-2xl"
+            className="w-full h-130 object-cover rounded-3xl shadow-2xl"
           />
         </motion.div>
 

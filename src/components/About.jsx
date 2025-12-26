@@ -10,7 +10,7 @@ const About = () => {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="w-full h-[420px]"
+          className="w-full h-105"
         >
           <img
             src={aboutImg}

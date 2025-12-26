@@ -17,7 +17,7 @@ const Location = () => {
           <iframe
             title="Barber Location"
             src="https://www.google.com/maps?q=Beirut&output=embed"
-            className="w-full h-[400px]"
+            className="w-full h-100"
             loading="lazy"
           />
         </div>
