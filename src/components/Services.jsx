@@ -1,35 +1,34 @@
 import { motion } from "framer-motion"
+import { ScissorsIcon, SparklesIcon, FireIcon } from "@heroicons/react/24/solid"
 
 const services = [
-  { title: "Classic Haircut", price: "$10", desc: "Precision cut tailored to your style" },
-  { title: "Fade & Styling", price: "$12", desc: "Clean fades with modern finish" },
-  { title: "Beard Trim", price: "$8", desc: "Sharp lines and balanced shaping" },
-  { title: "Full Grooming", price: "$18", desc: "Haircut, beard, and styling" }
+  { title: "Haircut", icon: <ScissorsIcon className="w-16 h-16 text-[#c8a24d] mb-4" /> },
+  { title: "Beard Styling", icon: <SparklesIcon className="w-16 h-16 text-[#c8a24d] mb-4" /> },
+  { title: "Hot Shave", icon: <FireIcon className="w-16 h-16 text-[#c8a24d] mb-4" /> },
 ]
 
 const Services = () => {
   return (
-    <section id="services" className="bg-black py-24">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="services" className="bg-[#0f0f0f] py-24">
+      <div className="max-w-7xl mx-auto px-6 text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
           className="text-white text-4xl font-bold mb-12"
         >
           Our Services
         </motion.h2>
 
-        <div className="grid md:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 gap-8">
           {services.map((s, i) => (
             <motion.div
               key={i}
-              whileHover={{ y: -6 }}
-              className="border border-gray-800 rounded-2xl p-6 bg-[#0f0f0f]"
+              whileHover={{ scale: 1.05 }}
+              className="bg-[#1a1a1a] p-6 rounded-2xl shadow-lg flex flex-col items-center"
             >
-              <h3 className="text-white text-lg font-semibold mb-2">{s.title}</h3>
-              <p className="text-gray-400 text-sm mb-4">{s.desc}</p>
-              <span className="text-[#c8a24d] font-medium">{s.price}</span>
+              {s.icon}
+              <h3 className="text-[#c8a24d] text-xl font-bold">{s.title}</h3>
             </motion.div>
           ))}
         </div>

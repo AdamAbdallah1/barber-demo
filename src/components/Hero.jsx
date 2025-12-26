@@ -1,8 +1,9 @@
 import { motion } from "framer-motion"
+import heroImg from "../assets/gallery/barber1.jpg"
 
 const Hero = () => {
   return (
-    <section className="min-h-screen bg-[#0f0f0f] flex items-center">
+    <section className="min-h-screen bg-[#0f0f0f] flex items-center pt-20">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
         <motion.div
@@ -15,13 +16,12 @@ const Hero = () => {
           </p>
 
           <h1 className="text-white text-4xl md:text-6xl font-bold leading-tight mb-6">
-            Sharp Cuts.<br />
-            Timeless Style.
+            Sharp Cuts.<br />Timeless Style.
           </h1>
 
           <p className="text-gray-400 max-w-md mb-8">
             A modern Lebanese barbershop delivering precision haircuts,
-            clean fades, and confident style for men who care about detail.
+            clean fades, and confident style.
           </p>
 
           <div className="flex gap-4">
@@ -45,11 +45,18 @@ const Hero = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-          className="hidden md:block h-125 rounded-3xl bg-linear-to-br from-[#1a1a1a] to-[#0a0a0a]"
-        />
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className="hidden md:block"
+        >
+          <img
+            src={heroImg}
+            alt="Barber shop"
+            className="w-full h-[520px] object-cover rounded-3xl shadow-2xl"
+          />
+        </motion.div>
+
       </div>
     </section>
   )
