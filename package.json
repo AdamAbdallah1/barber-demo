@@ -5,13 +5,11 @@
   "type": "module",
   "homepage": "https://adamabdallah1.github.io/barber-demo",
   "scripts": {
-    "start": "react-scripts start",
     "dev": "vite",
-    "deploy": "gh-pages -d build",
-    "predploy": "npm run build",
-    "build": "react-scripts build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
