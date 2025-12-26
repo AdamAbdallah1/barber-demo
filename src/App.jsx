@@ -1,26 +1,30 @@
 import Navbar from "./components/Navbar"
+import ScrollProgress from "./components/ScrollProgress"
+import BackToUp from "./components/BackToUp"
 import Hero from "./components/Hero"
-import Services from "./components/Services"
 import About from "./components/About"
+import Services from "./components/Services"
+import Testimonials from "./components/Testimonials"
 import Gallery from "./components/Gallery"
 import Location from "./components/Location"
-import ContactCTA from "./components/ContactCTA"
 import Footer from "./components/Footer"
-import Testimonials from "./components/Testimonials"
+import ContactCTA from "./components/ContactCTA"
 
 function App() {
   return (
-    <>
+    <div className="bg-[#0f0f0f] text-white">
       <Navbar />
+      <ScrollProgress />
       <Hero />
-      <Services />
       <About />
-      <Gallery />
-      <Location />
+      <Services />
       <Testimonials />
+      <Gallery />
+      <BackToUp />
+      <Location />
       <ContactCTA />
       <Footer />
-    </>
+    </div>
   )
 }
 

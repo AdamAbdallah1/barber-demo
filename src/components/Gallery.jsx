@@ -13,7 +13,7 @@ const Gallery = () => {
   const [selectedImg, setSelectedImg] = useState(null)
 
   return (
-    <section className="bg-[#0f0f0f] py-24">
+    <section id="gallery" className="bg-[#0f0f0f] py-24">
       <div className="max-w-7xl mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

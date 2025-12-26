@@ -18,7 +18,7 @@ const ContactCTA = () => {
 
         <motion.a
           whileHover={{ scale: 1.05 }}
-          href="https://wa.me/961XXXXXXXX"
+          href="https://wa.me/96181090757"
           className="inline-block bg-[#c8a24d] text-black px-10 py-4 rounded-full font-medium"
         >
           WhatsApp Now

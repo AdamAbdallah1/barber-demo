@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
     <footer className="bg-black py-10 border-t border-gray-800">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-around items-center gap-6">
         <span className="text-gray-500 text-sm">
-          © 2025 Barber Studio. Beirut, Lebanon
+          © 2025 Cedars Tech. Beirut, Lebanon
         </span>
 
         <div className="flex gap-6 text-gray-400 text-sm">
