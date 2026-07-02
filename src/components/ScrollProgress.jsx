@@ -10,16 +10,15 @@ const ScrollProgress = () => {
       const scrolled = (scrollTop / scrollHeight) * 100
       setScroll(scrolled)
     }
-
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
   return (
-    <div className="fixed top-17 left-0 w-full h-1 bg-[#1a1a1a] z-40">
+    <div className="fixed top-0 left-0 w-full h-[1px] bg-transparent z-[60]">
       <div
-        className="h-1 bg-[#c8a24d]"
-        style={{ width: `${scroll}%`, transition: "width 0.2s ease-out" }}
+        className="h-full bg-[#C5A059]"
+        style={{ width: `${scroll}%`, transition: "width 0.1s ease-out" }}
       />
     </div>
   )
