@@ -30,7 +30,6 @@ const WhatsAppButton = () => {
       "
     >
       <FaWhatsapp className="w-5 h-5" />
-      Book Appointment
     </a>
   );
 };
