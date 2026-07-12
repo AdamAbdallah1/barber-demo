@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Gallery from "./components/Gallery";
 import About from "./components/About";
+import WhatsAppButton from "./components/WhatsAppButton";
 import Testimonials from "./components/Testimonials";
 import Team from "./components/Team";
 import Location from "./components/Location";
@@ -113,10 +114,7 @@ function App() {
 
       </main>
 
-
-
-
-      <BackToUp />
+      <WhatsAppButton />
 
       <Footer />
 

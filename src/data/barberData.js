@@ -10,6 +10,13 @@ import cut2 from "../assets/gallery/barber2.jpg";
 import cut3 from "../assets/gallery/barber3.jpg";
 import cut4 from "../assets/gallery/barber4.jpg";
 
+import insta1 from "../assets/gallery/barber1.jpg";
+import insta2 from "../assets/gallery/barber2.jpg";
+import insta3 from "../assets/gallery/barber3.jpg";
+import insta4 from "../assets/gallery/barber4.jpg";
+import insta5 from "../assets/gallery/barber5.jpg";
+import insta6 from "../assets/gallery/barber6.jpg";
+
 
 const barberData = {
     team: [
@@ -90,31 +97,42 @@ const barberData = {
       cut3,
       cut4,
     ],
+    instagram:[
+        insta1,
+        insta2,
+        insta3,
+        insta4,
+        insta5,
+        insta6,
+    ],
   },
 
 
   services: [
-    {
-      title: "Royal Fade Experience",
-      price: "$25",
-      description:
-        "Precision haircut with modern styling and professional finishing.",
-    },
+  {
+    title: "Royal Fade Experience",
+    price: "$25",
+    duration: "45 min",
+    description:
+      "Precision haircut with modern styling and professional finishing.",
+  },
 
-    {
-      title: "Beard Styling",
-      price: "$15",
-      description:
-        "Detailed beard shaping with hot towel treatment.",
-    },
+  {
+    title: "Beard Styling",
+    price: "$15",
+    duration: "30 min",
+    description:
+      "Detailed beard shaping with hot towel treatment.",
+  },
 
-    {
-      title: "VIP Grooming",
-      price: "$45",
-      description:
-        "Complete grooming experience including haircut, beard styling, and treatment.",
-    },
-  ],
+  {
+    title: "VIP Grooming",
+    price: "$45",
+    duration: "90 min",
+    description:
+      "Complete grooming experience including haircut, beard styling, and treatment.",
+  },
+],
 
 
   testimonials: [
